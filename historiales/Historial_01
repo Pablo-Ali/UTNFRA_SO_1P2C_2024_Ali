@@ -122,3 +122,107 @@ echo "creación del segundo historial antes de ponerme a probar cosas con los di
 history -a
 history
 cp ~/.bash_history ./Historial_1
+cp ~/.bash_history ./Historial_2
+cd ..
+git status
+ll
+cd UTNF
+cd UTNFRA_SO_1P2C_2024_Ali/
+git status
+git add README.md 
+git commit -m "docs: agregados los datos personales al archivo README"
+git status
+git add Historial_2 Script_README.sh 
+git status
+git commit -m "ADD: Script para la modificación del README e historial 2, previo a la prueba de particionado de discos"
+git push
+git status
+ll
+man mv
+mv Historial_2 historiales/
+ll historiales/
+rm -rf Historial_1 
+ll
+ll historiales/
+git status
+git add .
+git commit -m "fix: el archivo Historial_2 ahora se encuentra en la carpeta que le corresponde"
+git push 
+sudo fdisk 
+fdisk --help
+sudo fdisk /dev/sdc 
+sudo fdisk -l
+sudo fdisk -l | awk '{print:$2}'
+sudo fdisk -l | awk '{print $2}'
+sudo fdisk -l | grep "10G" | awk '{print $2}'
+sudo fdisk -l | grep "10G"
+sudo fdisk -l | grep "10
+
+eof
+"
+sudo fdisk -l | grep "10 G"
+sudo fdisk -l | grep "10 G" | awk '{print $2}'
+sudo fdisk -l | grep "10 G" | awk '{print $2}' | awk -F ':' '{print $1}'
+ll
+cd RTA_SCRIPT_Examen_20241009/
+ll
+vim Punto_B.sh 
+./Punto_B.sh 
+vim Punto_B.sh 
+./Punto_B.sh 
+sudo fdisk -l /dev/sdc
+ll /
+ll /Examenes-UTN/
+vim Punto_B.sh 
+echo creadas las particiones, armo el historial 3 antes de probar el montaje persistente
+history -a
+ll
+cd..
+cd ..
+ll
+cd historiales/
+cp ~/.bash_history ./Historial_3
+ll
+cd ..
+git status
+git add .
+git commit -m "ADD: script del punto B con la parte de partición comentada para iniciar la prueba de montaje | el historial hasta el momento"
+git push
+vim Punto_B.sh 
+ll
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_B.sh 
+./Punto_B.sh 
+vim Punto_B.sh 
+./Punto_B.sh 
+sudo blkid
+sudo vim /et/fstab
+sudo vim /etc/fstab
+./Punto_B.sh 
+mount | grep /dev/sdc
+cd ..
+git status
+git add .
+git commit -m "fix: agregados los números de las particiones en el montaje persistente, lo que llevaba a un error"
+git push
+cd historiales/
+cd ..
+history -a
+echo agregando al historial 3 todo lo que faltaba antes de destruir la máquina
+history -a
+cp ~/.bash_history ./historiales/Historial_3 
+git status 
+git add .
+git commit -m "feat: historial actualizado previo a la destrucción de la máquina"
+ll
+vim RTA_SCRIPT_Examen_20241009/Punto_B.sh 
+git status
+git add .
+git commit -m "feat: eliminados los comentarios en el apartado de partición para que se ejecute el script completo"
+git push
+echo eliminación de los historiales 1-3 para unificarlos en uno solo
+history -a
+cd historiales/
+ll
+rm -rf Historial_1 Historial_2 Historial_3
+ll
