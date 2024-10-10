@@ -181,3 +181,32 @@ cd..
 cd ..
 ll
 cd historiales/
+cp ~/.bash_history ./Historial_3
+ll
+cd ..
+git status
+git add .
+git commit -m "ADD: script del punto B con la parte de partición comentada para iniciar la prueba de montaje | el historial hasta el momento"
+git push
+vim Punto_B.sh 
+ll
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_B.sh 
+./Punto_B.sh 
+vim Punto_B.sh 
+./Punto_B.sh 
+sudo blkid
+sudo vim /et/fstab
+sudo vim /etc/fstab
+./Punto_B.sh 
+mount | grep /dev/sdc
+cd ..
+git status
+git add .
+git commit -m "fix: agregados los números de las particiones en el montaje persistente, lo que llevaba a un error"
+git push
+cd historiales/
+cd ..
+history -a
+echo agregando al historial 3 todo lo que faltaba antes de destruir la máquina
+history -a
