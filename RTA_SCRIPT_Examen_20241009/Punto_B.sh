@@ -2,7 +2,7 @@
 
 DISCO=$(sudo fdisk -l | grep "10 G" | awk '{print $2}' | awk -F ':' '{print $1}')
 
-#sudo fdisk $DISCO << EOF
+sudo fdisk $DISCO << EOF
 n
 e
 
@@ -39,7 +39,7 @@ n
 
 +1022M
 w
-#EOF
+EOF
 
 sudo mkfs.ext4 ${DISCO}5
 sudo mkfs.ext4 ${DISCO}6
