@@ -1,0 +1,183 @@
+ssh-keygen -t ed25519
+ll
+cd repogit/
+ll
+vim Vagrantfile 
+cd
+pwd
+tar -cvzf  ssh_backup.tgz .ssh
+mv ssh_backup.tgz repogit/
+ll
+cd repogit/
+ll
+sudo apt update
+sudo apt install tree -y
+tree
+whoami
+echo $HOME
+history 
+ls -la
+cat $HOME/.ssh/*.pub
+pwd
+ll
+cd repogit/
+ll
+git clone git@github.com:Pablo-Ali/UTNFRA_SO_1P2C_2024_Ali.git
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+ls -l
+https://github.com/upszot/UTN-FRA_SO_Examenes.git
+vagrant@Ali:~/repogit$ ls -l
+total 14
+-rwxrwxrwx 1 vagrant vagrant  825 Sep  2 22:29 Readme.md
+drwxrwxrwx 1 vagrant vagrant 4096 Oct  9 21:11 UTN-FRA_SO_Examenes
+drwxrwxrwx 1 vagrant vagrant    0 Oct  9 21:10 UTNFRA_SO_1P2C_2024_Ali
+-rwxrwxrwx 1 vagrant vagrant 1034 Oct  7 22:06 Vagrantfile
+-rwxrwxrwx 1 vagrant vagrant  573 Sep  2 22:29 script_Enable_ssh_password.sh
+-rwxrwxrwx 1 vagrant vagrant  557 Oct  7 22:15 ssh_backup.tgz
+vagrant@Ali:~/repogit$ https://github.com/upszot/UTN-FRA_SO_Examenes.git
+-bash: https://github.com/upszot/UTN-FRA_SO_Examenes.git: No such file or directory
+vagrant@Ali:~/repogit$ ls -l
+total 14
+-rwxrwxrwx 1 vagrant vagrant  825 Sep  2 22:29 Readme.md
+drwxrwxrwx 1 vagrant vagrant 4096 Oct  9 21:11 UTN-FRA_SO_Examenes
+drwxrwxrwx 1 vagrant vagrant    0 Oct  9 21:10 UTNFRA_SO_1P2C_2024_Ali
+-rwxrwxrwx 1 vagrant vagrant 1034 Oct  7 22:06 Vagrantfile
+-rwxrwxrwx 1 vagrant vagrant  573 Sep  2 22:29 script_Enable_ssh_password.sh
+-rwxrwxrwx 1 vagrant vagrant  557 Oct  7 22:15 ssh_backup.tgz
+vagrant@Ali:~/repogit$ https://github.com/upszot/UTN-FRA_SO_Examenes.git
+-bash: https://github.com/upszot/UTN-FRA_SO_Examenes.git: No such file or directory
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+tree UTNFRA_SO_1P2C_2024_Ali/
+clear
+pwd
+git status
+ll
+cd UTNFRA_SO_1P2C_2024_Ali/
+ll
+git status
+git add .
+git commit -m "ADD: primer commit"
+git config --global user.email "pablosharifali@gmail.com"
+git config --global user.name "Pablo-Ali"
+git commit -m "ADD: primer commit"
+git status
+git push 
+git status
+history -a
+ll
+mkdir pruebas
+ll
+cd pruebas
+mkdir -p {alumno_{1..3}/parcial_{1..3},profesores}
+tree
+ll
+cd ..
+ll
+man rm
+rm -rf pruebas/
+ll
+cd RTA_SCRIPT_Examen_20241009/
+ll
+vim Punto_A.sh 
+ls -la
+./Punto_A.sh 
+sudo ./Punto_A.sh 
+ls -l /
+tree /Examenes-UTN/
+cd ..
+git status
+git add .
+git commit -m "ADD: finalizado el punto A"
+git push 
+history -a
+mkdir historiales
+cd historiales/
+man echo
+echo crenado historial_1 al finalizar el punto A
+history -a
+cp ~/.bash_history ./Historial_1
+ll
+cd..
+cd ..
+git status
+git add .
+git commit -m "ADD: primer historial al finalizar el punto A"
+git push
+ll
+cd repogit/
+ll
+cd UTNFRA_SO_1P2C_2024_Ali/
+ll
+vim Script_README.sh
+cat RTA_SCRIPT_Examen_20241009/Punto_A.sh 
+vim Script_README.sh 
+./Script_README.sh 
+cat README.md 
+sudo fdisc -l
+sudo Fdisc -l
+sudo fdisk -l
+echo creación del segundo historial antes de ponerme a probar cosas con los discos
+echo "creación del segundo historial antes de ponerme a probar cosas con los discos"
+history -a
+history
+cp ~/.bash_history ./Historial_1
+cp ~/.bash_history ./Historial_2
+cd ..
+git status
+ll
+cd UTNF
+cd UTNFRA_SO_1P2C_2024_Ali/
+git status
+git add README.md 
+git commit -m "docs: agregados los datos personales al archivo README"
+git status
+git add Historial_2 Script_README.sh 
+git status
+git commit -m "ADD: Script para la modificación del README e historial 2, previo a la prueba de particionado de discos"
+git push
+git status
+ll
+man mv
+mv Historial_2 historiales/
+ll historiales/
+rm -rf Historial_1 
+ll
+ll historiales/
+git status
+git add .
+git commit -m "fix: el archivo Historial_2 ahora se encuentra en la carpeta que le corresponde"
+git push 
+sudo fdisk 
+fdisk --help
+sudo fdisk /dev/sdc 
+sudo fdisk -l
+sudo fdisk -l | awk '{print:$2}'
+sudo fdisk -l | awk '{print $2}'
+sudo fdisk -l | grep "10G" | awk '{print $2}'
+sudo fdisk -l | grep "10G"
+sudo fdisk -l | grep "10
+
+eof
+"
+sudo fdisk -l | grep "10 G"
+sudo fdisk -l | grep "10 G" | awk '{print $2}'
+sudo fdisk -l | grep "10 G" | awk '{print $2}' | awk -F ':' '{print $1}'
+ll
+cd RTA_SCRIPT_Examen_20241009/
+ll
+vim Punto_B.sh 
+./Punto_B.sh 
+vim Punto_B.sh 
+./Punto_B.sh 
+sudo fdisk -l /dev/sdc
+ll /
+ll /Examenes-UTN/
+vim Punto_B.sh 
+echo creadas las particiones, armo el historial 3 antes de probar el montaje persistente
+history -a
+ll
+cd..
+cd ..
+ll
+cd historiales/
