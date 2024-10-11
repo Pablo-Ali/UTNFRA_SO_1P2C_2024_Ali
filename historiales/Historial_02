@@ -1,0 +1,28 @@
+sudo apt update
+sudo apt install tree -y
+cp repogit/ssh_backup.tgz .
+tar -xvzf ssh_backup.tgz 
+ll
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/
+vim Punto_C.sh 
+ll
+cat .Punto_C.sh.swp 
+rm -rf .Punto_C.sh.swp 
+ll
+vim Punto_C.sh 
+./Punto_A.sh 
+./Punto_B.sh 
+./Punto_C.sh 
+ll /Examenes-UTN/
+ll /Examenes-UTN/alumno_1
+sudo ll /Examenes-UTN/alumno_1
+sudo ls -la /Examenes-UTN/alumno_1/
+sudo cat /Examenes-UTN/alumno_1/validar.txt
+sudo cat /Examenes-UTN/alumno_3/validar.txt
+history -a
+cd ..
+ll
+cd historiales/
+ll
+echo creando el historial 2 luego de resolver el punto C. Perdí toda una máquina en el medio. Aparentemente, al traer la clave ssh del comprimido, hay que destruir y volver a crear las máquinas cada vez que se apagan, ya que deja de funcionar el vagrant ssh
+history -a
