@@ -1,0 +1,36 @@
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/
+./Punto_A.sh 
+./Punto_B.sh 
+./Punto_C.sh 
+sudo apt update
+sudo apt install tree -y
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/
+ll
+cat Punto_A.sh 
+ls -l /home/vagrant/
+mkdir -p /home/vagrant/prueba
+tree /home/vagrant/prueba/Estructura_Asimetrica/
+mkdir -p /home/vagrant/prueba
+/Estructura_Asimetrica/{{correo,cliente}/cartas_{1..100}, correo/carteros_{1..10}}
+mkdir -p /home/vagrant/prueba/Estructura_Asimetrica_2/{correo,cliente}/cartas_{1..100}, correo/carteros_{1..10}
+tree /home/vagrant/prueba/Estructura_Asimetrica_2/
+mkdir -p /home/vagrant/prueba/Estructura_Asimetrica_3/{correo,cliente}/cartas_{1..100},correo/carteros_{1..10}
+tree /home/vagrant/prueba/Estructura_Asimetrica_3/
+mkdir -p /home/vagrant/prueba/Estructura_Asimetrica_4/{{correo,cliente}/cartas_{1..100},correo/carteros_{1..10}}
+tree /home/vagrant/prueba/Estructura_Asimetrica_4/
+ls -l /home/vagrant/prueba/
+rm -rf /home/vagrant/prueba/
+ls -l /home/vagrant/
+vim Punto_D.sh 
+./Punto_D.sh 
+ls -l /home/vagrant/
+tree /home/vagrant/Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+cd ..
+cd
+cp repogit/ssh_backup.tgz .
+tar -xvzf ssh_backup.tgz 
+cd repogit/
+cd UTNFRA_SO_1P2C_2024_Ali/
+cd historiales/
+echo creación del historial 3. Habrá que hacer uno nuevo cada vez que se apague la máquina
+history -a
