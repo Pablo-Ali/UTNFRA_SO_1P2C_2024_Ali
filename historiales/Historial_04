@@ -1,0 +1,92 @@
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/
+ll
+ll correo/
+rm -rf correo/
+ll correo/
+./ Punto_D.sh 
+./Punto_D.sh 
+ll
+ll /home/vagrant/Estructura_Asimetrica/
+ll /home/vagrant/Estructura_Asimetrica/correo/
+mang grep
+man grep
+grep -i memtotal /proc/meminfo 
+vim Punto_E.sh 
+pwd
+vim Punto_E.sh 
+./Punto_E.sh 
+ll
+cat Filtro_Basico.txt 
+rm -rf Filtro_Basico.txt 
+grep -i chassis dmidecode -t chassis
+dmidecode -t chassis
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis | grep -i chassis | head -n1
+sudo dmidecode -t chassis | grep -i chassis | head -n2
+sudo dmidecode -t chassis | grep -i chassis|manufacturer
+sudo dmidecode -t chassis | grep -i "chassis","manufacturer"
+sudo dmidecode -t chassis | grep -i "chassis"|"manufacturer"
+man grep
+sudo dmidecode -t chassis | grep -i "chassis" "manufacturer"
+sudo dmidecode -t chassis | grep -i "chassis" | grep -i "manufacturer"
+sudo dmidecode -t chassis | grep -i "chassis"
+sudo dmidecode -t chassis | grep -i "manufacturer"
+sudo dmidecode -t chassis | grep -i chassis | head +n1
+sudo dmidecode -t chassis | grep -i "chassis" \n"manufacturer"
+sudo dmidecode -t chassis | grep -i "chassis|manufacturer"
+sudo dmidecode -t chassis | grep -i -E "chassis|manufacturer"
+vim Punto_E.sh 
+./Punto_E.sh 
+ll
+cat Filtro_Basico.txt 
+cd
+cp repogit/ssh_backup.tgz .
+tar -xvzf ssh_backup.tgz 
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/
+git status
+ll
+cd RTA_SCRIPT_Examen_20241009/
+ll
+rm -rf Filtro_Basico.txt 
+cd ..
+git status
+git add .
+git commit -m "ADD: Punto E completo"
+git config --global user.email "pablosharifali@gmail.com"
+git config --global user.name "Pablo-Ali"
+git commit -m "ADD: Punto E completo"
+git push
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_C.sh 
+vim Punto_F.sh 
+git remote get-url origin
+cd
+git remote get-url origin
+git remote --help
+git remote get-url /home/vagrant/repogit/UTNFRA_SO_1P2C_2024_Ali/
+git remote get-url origin /home/vagrant/repogit/UTNFRA_SO_1P2C_2024_Ali/
+git remote get-url origin UTNFRA_SO_1P2C_2024_Ali/
+git remote get-url UTNFRA_SO_1P2C_2024_Ali/
+git remote get-url origin
+cd /home/vagrant/repogit/UTNFRA_SO_1P2C_2024_Ali
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_F.sh 
+vim Punto_E.sh 
+vim Punto_F.sh 
+curl -s ifconfig.me
+vim Punto_F.sh 
+cd
+./repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/Punto_F.sh 
+cd repogit/UTNFRA_SO_1P2C_2024_Ali/RTA_SCRIPT_Examen_20241009/
+ll
+cat Filtro_Avanzado.txt 
+rm -rf Filtro_Avanzado.txt 
+ll
+cd ..
+git status
+ll
+git add .
+git commit -m "ADD: Punto F finalizado"
+echo "último historial del examen (espero)"
+ll historiales/
+history -a
